@@ -1,117 +1,113 @@
 #main
-	padding 20px 0 60px
+	padding 60px 0
 	min-height calc(100vh - 67px - 148px)
-.main-title-thanks
-	font-size: 26px
-	text-align: center
-	color: myDarkGreen
-	margin-bottom: 30px
-	span
-		font-family: RO
-.main-container
-	width 100%
-	background-image url(../img/backgrounds/last_bg.png)
+	background-image url(../img/backgrounds/author_bg.png)
 	background-repeat no-repeat
 	background-position: center
-	background-size: cover
-	padding 40px
-	border-radius: 15px
-	border 2px solid myDarkGreen
-	&-title
-		border 2px dotted rgb(239, 239, 239);
-		border-radius: 15px;
-		font-size: 26px;
-		color: rgb(248, 248, 248);
-		font-family: RO
-		padding 20px
-		margin-bottom: 50px
-		text-align: center
+	text-align: center
+.main-title-thanks
+	font-size: 22px
+	text-align: center
+	margin-bottom: 30px
+	span
+		font-weight: bold
+		color #f6c462
+.main-subtitle-thanks
+	font-family: PH
+	font-size: 24px
+	margin-bottom: 20px
 .thanks-text
-	font-size: 24px;
+	font-size: 22px;
 	color: rgb(248, 248, 248);
-	font-family: RO
-	color myDarkGreen
+	color #fff
 	margin-bottom: 40px
 	text-align: center
 	span
 		font-size: 26px
-		color myGreen
+		color #f6c462
 		display: block
 .switch-date
 	display: inline-block
 	font-size: 26px
-	font-family: RO
-.form-promo
-	width 100%
-	max-width 700px
-	margin 0 auto
+	font-family: PH
+
 .inputrow
 	float left
-	margin-right: 30px
 	width 100%
-	max-width: 330px;
+	max-width: 300px;
 .intl-tel-input
 	width 100%
-.input-mail
-	float left
-	margin-bottom: 0
-	display block
-	border: 1px solid rgb(32, 44, 35);
-	border-radius: 15px;
-	background-color: rgb(239, 239, 239);
+.form
+	// overflow hidden
+	border 3px solid #FFC55A
+	padding 20px 40px
+	overflow hidden
 	width 100%
-	padding 9px 10px
-	font-size: 24px;
-	color: #000
+	max-width 650px
+	margin 0 auto
+.input
+	// display: inline-block
+	border: 2px solid rgb(239, 192, 94);
+	background-color: rgb(255, 255, 255);
+	width 100%
+	line-height: 32px;
+	padding 0 10px
+	font-size: 22px;
+	font-family: PH
+	color: rgb(42, 45, 62);
 @-webkit-keyframes autofill
 	to
-		font-size: 24px
-		color: #000
-		background-color: rgb(239, 239, 239);
+		font-size: 22px
+		color: rgb(42, 45, 62);
+		background-color: rgb(255, 255, 255);
 input:-webkit-autofill
 	-webkit-animation-name: autofill;
 	-webkit-animation-fill-mode: both;
 .button-form
-	float right
-	max-width 330px
-.alert-message {
-	clear both
-	display: none;
-	font-size: 16px;
-	padding-top: 10px;
-	color: #f00
+	border 2px solid rgb(246, 196, 98);
+	background-color: rgb(246, 196, 98);
+	width 100%
+	max-width 219px;
+	line-height: 32px;
+	font-size: 28px;
+	font-family: PH
+	color: rgb(42, 45, 62);
 	text-align: center
-}
+	display: inline-block
+	float: right
+	&:hover
+		background-color: transparent
+		color rgb(246, 196, 98) !important
 .checking {
 	display: table;
 	width 100%
-	max-width 465px
+	max-width 480px
 	margin: 10px auto 0
 	text-align: left
 }
 
 .checking .check-label {
-	line-height: 33px;
+	line-height: 20px;
 	cursor: pointer;
 	position: relative;
 	display: table-cell;
 	vertical-align: middle;
-	padding: 0 0 0 45px;
+	padding: 0 0 0 25px;
 	text-align: left;
-	font-size: 16px
-	color #f8f8f8
+	font-size: 14px
+	color #aaa
 }
 
 .checking .check-label a
 	text-decoration: underline
 	display: inline
-	color #f8f8f8
+	color #aaa
 	&:focus
 		text-decoration: underline
-		color #f8f8f8
+		color #aaa
 	&:hover
 		text-decoration: none
-		color #f8f8f8
+		color #aaa
 
 .checking .check-label:before {
 	content: '';
@@ -119,22 +115,22 @@ input:-webkit-autofill
 	position: absolute;
 	left: 0;
 	top: 3px;
-	width: 31px;
-	height: 31px;
+	width: 15px;
+	height: 15px;
 	border 1px solid #b6b8c0
 }
 
 .checking .check-label:after {
 	content: '';
 	position: absolute;
-	left: 10px;
+	left: 3px;
 	top: -10px;
 	width: 11px;
 	height: 18px;
 	background-color: transparent;
 	opacity: 0;
-	border-bottom: 4px solid #4d67ac
-	border-right: 4px solid #4d67ac
+	border-bottom: 3px solid #fff
+	border-right: 3px solid #fff
 	-webkit-transform: rotate(41deg);
 	-ms-transform: rotate(41deg);
 	transform: rotate(41deg);
@@ -161,7 +157,7 @@ input:-webkit-autofill
 
 .check:checked + .check-label:after {
 	opacity: 1;
-	top: 7px;
+	top: -3px;
 	-webkit-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;

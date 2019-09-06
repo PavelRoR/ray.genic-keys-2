@@ -1,0 +1,22 @@
+section#mail-section
+	.container
+		.mail-form-container
+			form(action="https://shop.mastervision.su/?r=personal/newsletter/sub/add&id=3568&lg=ru&Contact[id_newsletter]=883" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form.form-mail-section
+				h3.form-title Запишитесь сейчас
+					span &raquo;
+				.email-block
+					input( type="hidden" value="1" name="required_fields[email]")
+					input(class="input input-mail" name="Contact[email]" type="text" placeholder="Ваш email")
+				button(type="submit").button-form Записаться
+				.clearfix
+				.checking
+					input(type="checkbox" id="check-1" checked).check
+					label(for="check-1").check-label Я согласен с 
+						a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics")  условиями обработки персональных данных по 152 - Ф3
+				div(style="display: none;")
+					#formTypeSpecificVars(style="display: none;")
+						input(type="hidden" value="883" id="form_newsletter_id_newsletter" name="Contact[id_newsletter]")
+					<!-- API код канала рекламы -->
+					input(type="hidden" value="0" id="form_newsletter_id_advertising_channel_page" name="Contact[id_advertising_channel_page]")
+					input(type="hidden" name="formId" value="137")
+					input(type="hidden" name="formVc" value="2118191657")

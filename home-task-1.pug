@@ -1,0 +1,27 @@
+-var head_url = 'https://roleva-yurina.mastervision.su/genic-keys-webinar/home-task-1/';
+-var head_title = '1 домашнее задание от Вероники Юриной и Анны Ролевой';
+-var styles = '../css/bonus.min.css';
+-var fb_content = '2030481470529055'
+-var fav_ico = '../favicon.ico'
+-var fav_png = '../favicon.png'
+	
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_fb_scripts
+	body
+		include pug/scripts/body_top_fb_scripts
+		include pug/header
+		section#main
+			.container
+				.bordered-container.bordered-container-main
+					.inner-bordered-container
+						.bordered-container-wrapper
+							p.main-info Старт онлайн-мастер-класса: 
+								span с №№ месяца, в 19:00 (МСК)
+							h1.main-title-ht Первое задание от Анны Ролевой и Вероники Юриной:
+							p.main-text Напишите, искали ли Вы свое предназначение и какими способами? Что Вам удалось понять о себе? Какие остались вопросы?
+		include pug/bonus/2.feedback.pug
+		include pug/bonus/3.footer.pug
+		include pug/scripts/body_bottom_scripts

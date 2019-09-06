@@ -1,0 +1,27 @@
+-var head_url = 'https://roleva-yurina.mastervision.su/genic-keys-webinar/home-task-2/';
+-var head_title = '2 домашнее задание от Вероники Юриной и Анны Ролевой';
+-var styles = '../css/bonus.min.css';
+-var fb_content = '2030481470529055'
+-var fav_ico = '../favicon.ico'
+-var fav_png = '../favicon.png'
+	
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_fb_scripts
+	body
+		include pug/scripts/body_top_fb_scripts
+		include pug/header
+		section#main
+			.container
+				.bordered-container.bordered-container-main
+					.inner-bordered-container
+						.bordered-container-wrapper
+							p.main-info Старт онлайн-мастер-класса: 
+								span с №№ месяца, в 19:00 (МСК)
+							h1.main-title-ht Второе важное задание, которое поможет развить осознанность и отследить шаблоны в Ваших отношениях:
+							p.main-text Опишите ситуации, когда Вы не проходили свой любовный урок с одним человеком и приходил второй похожий. Опишите основные типичные негативные чувства, которые Вы испытываете в любовной сфере, например: боль, разочарование, обида. Опишите кратко, чего Вам не хватает для счастья в любовной сфере
+		include pug/bonus/2.feedback.pug
+		include pug/bonus/3.footer.pug
+		include pug/scripts/body_bottom_scripts

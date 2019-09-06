@@ -1,0 +1,34 @@
+-var head_url = 'https://roleva-yurina.mastervision.su/genic-keys-webinar/';
+-var head_title = '«Механика Генных Ключей»';
+-var head_description = 'Бесплатный 3-х дневный онлайн-мастер-класс Анны Ролевой и Вероники Юриной';
+-var head_img = 'img/banner.jpg';
+-var styles = 'css/styles.min.css';
+-var fav_ico = 'favicon.ico';
+-var fav_png = 'favicon.png';
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+
+		include pug/header
+		a.button(href="") записаться
+		a.button.button-2(href="") записаться
+			span нах
+		include pug/main/1.main.pug
+		include pug/main/2.mail-section.pug
+		include pug/main/3.reasons.pug
+		include pug/main/4.changes.pug
+		include pug/main/5.plan.pug
+		include pug/main/6.authors.pug
+		include pug/main/7.revs.pug
+		include pug/main/8.last.pug
+		include pug/main/9.footer.pug
+		include pug/main/10.modal.pug
+		include pug/main/11.politics.pug
+		include pug/main/12.scripts.pug
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts

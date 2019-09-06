@@ -1,0 +1,144 @@
+GG = "Georgia",serif
+PH = 'Philosopher', sans-serif
+
+@font-face {
+	font-family: 'Philosopher';
+	src: url('../fonts/Philosopher.eot');
+	src: url('../fonts/Philosopher.eot') format('embedded-opentype'),
+		 url('../fonts/Philosopher.woff2') format('woff2'),
+		 url('../fonts/Philosopher.woff') format('woff'),
+		 url('../fonts/Philosopher.ttf') format('truetype'),
+		 url('../fonts/Philosopher.svg#Philosopher') format('svg');
+	font-display: fallback;
+	font-weight: normal
+	font-style: normal;
+}
+
+@import '../css/_css/bootstrap.min.css'
+
+*
+	margin 0
+	padding 0
+	outline none
+body
+	font-size: 18px
+	font-family: GG
+	color: #ffffff
+	background-color: #24293C
+a
+	color: #fefefe
+	&:focus
+		outline: 0
+	&:hover
+		text-decoration none
+h1,h2,h3,h4,h5,h6
+	font-weight normal
+	margin 0
+button
+	border none
+section
+header
+footer
+	width 100%
+	display block
+.video-wrapper
+	margin 0 auto
+	position relative
+	width 100%
+	&:before
+		content ''
+		height 0
+		padding-top 56.25%
+		display block
+	&:after
+		content: ''
+		display block
+		position: absolute
+		top: 0
+		left 0
+		right 0
+		width: 100%
+		height 70px
+	img,
+	iframe
+		position absolute
+		width 100%
+		height 100%
+		display block
+		background-color #000
+		border-radius 3px
+		border: 0
+		top 0
+		left 0
+		right 0
+		bottom 0
+		cursor pointer
+.general-title
+	font-size: 30px;
+	font-family: PH
+	color: rgb(239, 239, 239);
+	line-height: 1;
+	text-align: center;
+	margin-bottom: 50px
+	span
+		color #f6c462
+	&-2
+		color: rgb(42, 45, 62);
+		background-color: #D5D6D9
+		width 100%
+		max-width 700px
+		margin 0 auto 50px
+		position relative
+		&:before
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			width: 195px
+			height 19px
+			background-color: #FFC55A
+			top calc(50% - 15px)
+		&:before
+			left 0
+		&:after
+			right 0
+.button
+	display: block
+	font-size: 24px;
+	font-family: PH
+	text-align: center;
+	margin 40px auto 0
+	border: 3px solid
+	width: 100%
+	max-width 400px
+	line-height: 46px
+	color #f6c462
+	text-decoration: none
+	transition: all .4s ease
+	span
+		color #9f2b1b
+	&:focus
+		color #f6c462
+		text-decoration: none
+	&:hover
+		text-decoration: none
+		color #000
+		background-color: #f6c462
+	&-2
+		color #2a2d3e
+		&:focus
+			color #2a2d3e
+
+@import 'main/0.header'
+@import 'main/1.main'
+@import 'main/2.mail-section'
+@import 'main/3.reasons'
+@import 'main/4.changes'
+@import 'main/5.plan'
+@import 'main/6.authors'
+@import 'main/7.revs'
+@import 'main/8.last'
+@import 'main/9.footer'
+@import 'main/10.modal'
+@import 'main/11.politics'
+@import 'main/12.medias'

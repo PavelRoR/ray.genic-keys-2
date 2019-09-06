@@ -98,22 +98,22 @@ footer
 		color: rgb(42, 45, 62);
 		background-color: #D5D6D9
 		width 100%
-		max-width 700px
 		margin 0 auto 50px
 		position relative
+		z-index: 1
 		&:before
 		&:after
 			content: ''
-			display: block
+			z-index: -1
 			position: absolute
 			width: 195px
 			height 19px
 			background-color: #FFC55A
-			top calc(50% - 15px)
+			top calc(50% - 8px)
 		&:before
-			left 0
+			left -25px
 		&:after
-			right 0
+			right -25px
 .button
 	display: block
 	font-size: 24px;
@@ -140,7 +140,18 @@ footer
 		color #2a2d3e
 		&:focus
 			color #2a2d3e
-
+.bordered-container
+	border: 2px solid #fff
+	padding 5px
+	background-clip: content-box
+.inner-bordered-container
+	padding: 30px
+	border: 2px solid #fff
+	background-clip: content-box
+	background-color: rgba(#fff,.8)
+	overflow hidden
+.bordered-container-wrapper
+	padding 35px 25px
 @import 'main/0.header'
 @import 'main/1.main'
 @import 'main/2.mail-section'

@@ -1,0 +1,24 @@
+mixin change-item(cl,p)
+	.change-item(class= cl)
+		p.change-item-text= p
+
+section#changes
+	.container
+		h3.general-title Вы вернетесь после обучения 
+			span другим человеком:
+		.row
+			.col-md-4.col-sm-4
+				+change-item('change-item-1','Поймете себя, свои сильные и слабые стороны, особенности и уникальность')
+				+change-item('change-item-2','Получите ответы на самые волнующие вопросы о вашем месте в мире и предназначении')
+				+change-item('change-item-3','Проработаете темы своей реализации в любви и материальном мире')
+				+change-item('change-item-4','Узнаете, как раскрыть свой потенциал')
+			.col-md-4.col-sm-4
+				+change-item('change-item-5','Поймете, что значит проживать себя на уровне теней и даров')
+				+change-item('change-item-6','Узнаете свою уникальную генетическую архитектуру')
+				+change-item('change-item-7','Узнаете и проработаете свою генетическую сексуальную травму')
+				+change-item('change-item-8','Узнаете, не находитесь ли вы в позиции жертвы и, если да, то как выйти из этого состояния')
+			.col-md-4.col-sm-4
+				+change-item('change-item-9','Проработаете свое предназначению, энергию секса, любви и денег')
+				+change-item('change-item-10','Вернетесь к себе, расслабитесь и успокоитесь в своей уникальности')
+				h4.changes-subtitle И это бесплатно!
+		button.button.button-changes(data-togglr="modal" data-target="#modal") Воспользоваться возможностью

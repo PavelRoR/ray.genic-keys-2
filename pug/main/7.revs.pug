@@ -4,3 +4,58 @@ section#revs
 			.inner-bordered-container
 				.bordered-container-wrapper
 					h3.general-title.general-title-2 Отзывы учеников:
+					#video-revs-slider.carousel.slide(data-ride="carousel" data-interval="false")
+						.carousel-inner(role="listbox")
+							.item.active
+								.video-wrapper.video-wrapper-revs(data-youtube="O3BXFtns4IA" data-img="img/revs/video_1.jpg")
+									img(src="img/revs/video_1.jpg", alt="Видео отзыв")
+							.item
+								.video-wrapper.video-wrapper-revs(data-youtube="9IJZS4Y1c0M" data-img="img/revs/video_2.jpg")
+									img(src="img/revs/video_2.jpg", alt="Видео отзыв")
+							.item
+								.video-wrapper.video-wrapper-revs(data-youtube="Efb8J_hswSY" data-img="img/revs/video_4.jpg")
+									img(src="img/revs/video_4.jpg", alt="Видео отзыв")
+							.item
+								.video-wrapper.video-wrapper-revs(data-youtube="9i1znqcQ36I" data-img="img/revs/video_5.jpg")
+									img(src="img/revs/video_5.jpg", alt="Видео отзыв")
+							.item
+								.video-wrapper.video-wrapper-revs(data-youtube="8wBbd0n6Vlw" data-img="img/revs/video_6.jpg")
+									img(src="img/revs/video_6.jpg", alt="Видео отзыв")
+							.item
+								.video-wrapper.video-wrapper-revs(data-youtube="AyQggyk4FSQ" data-img="img/revs/video_7.jpg")
+									img(src="img/revs/video_7.jpg", alt="Видео отзыв")
+							.item
+								.video-wrapper.video-wrapper-revs(data-youtube="R7ZESI7tuvo" data-img="img/revs/video_8.jpg")
+									img(src="img/revs/video_8.jpg", alt="Видео отзыв")
+							.item
+						ol.carousel-indicators.revs-indicators
+							li.active( data-target="#revs-slider" data-slide-to="0")
+							li( data-target="#video-revs-slider" data-slide-to="1")
+							li( data-target="#video-revs-slider" data-slide-to="2")
+							li( data-target="#video-revs-slider" data-slide-to="3")
+							li( data-target="#video-revs-slider" data-slide-to="4")
+							li( data-target="#video-revs-slider" data-slide-to="5")
+							li( data-target="#video-revs-slider" data-slide-to="6")
+						.controls.text_controls
+							a( class="left carousel-control" href="#video-revs-slider" role="button" data-slide="prev") &laquo;
+							a( class="right carousel-control" href="#video-revs-slider" role="button" data-slide="next") &raquo;
+						.clearfix
+					#revs-slider.carousel.slide(data-ride="carousel" data-interval="false")
+						.carousel-inner(role="listbox")
+							.item.active
+								a( href="img/revs/rev_3.jpg" data-fancybox="revs").text-revs-link
+									img.revs-img( src="img/revs/rev_3.jpg" alt="Отзыв 3")
+							.item
+								a( href="img/revs/rev_2.jpg" data-fancybox="revs").text-revs-link
+									img.revs-img( src="img/revs/rev_2.jpg" alt="Отзыв 2")
+							.item
+								a( href="img/revs/rev_1.jpg" data-fancybox="revs").text-revs-link
+									img.revs-img( src="img/revs/rev_1.jpg" alt="Отзыв 1")
+						ol.carousel-indicators.revs-indicators
+							li.active( data-target="#revs-slider" data-slide-to="0")
+							li( data-target="#revs-slider" data-slide-to="1")
+							li( data-target="#revs-slider" data-slide-to="2")
+						.controls.text_controls
+							a( class="left carousel-control" href="#revs-slider" role="button" data-slide="prev") &laquo;
+							a( class="right carousel-control" href="#revs-slider" role="button" data-slide="next") &raquo;
+						.clearfix
